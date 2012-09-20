@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile Docs - Gallery of Form Controls</title>
+	<!--
+	<link rel="stylesheet"  href="../../../../themes/default/jquery.mobile.css" />
+	-->
+	<link rel="stylesheet"  href="../../../../themes/metro/jquery.mobile.metro.theme.css" />
+    <link rel="stylesheet"  href="../../../../jqmobile-core/jquery.mobile.fixedToolbar.polyfill.css" />
+
+	<script src="../../../../jqmobile-core/jquery.js"></script>
+    <script src="../../../../themes/metro/jquery.mobile.metro.theme.init.js"></script>
+	<script src="../../../../jqmobile-core/jquery.mobile.js"></script>
+    <script src="../../../../jqmobile-core/jquery.mobile.fixedToolbar.polyfill.js"></script>
+	<script src="../../../../themes/themeswitcher/jquery.globalstylesheet.js"></script>
+	<script src="../../../../themes/themeswitcher/jquery.mobile.themeswitcher.js"></script>
+<script type="text/javascript">
+// allows to use the page in NON cordova environment
+if (typeof window.external.Notify !== "undefined") {
+
+	var head = document.getElementsByTagName("head")[0];
+	var sc1 = document.createElement("script");
+	sc1.src = "../../../../cordova/cordova-1.5.0.js";
+	(head || document.body).appendChild(sc1);
+	
+	
+	var sc2 = document.createElement("script");
+	sc2.src = "../../../../cordova/phoneTheme.js";
+	(head || document.body).appendChild(sc2);
+
+	var sc3 = document.createElement("script");
+	sc3.src = "../../../../cordova/jquery.cordova.metro.themeswitcher.js";
+	(head || document.body).appendChild(sc3);
+}
+
+</script>
+
+</head>
+<body onload="$.mobile.touchToggleEnabled = false;">
+	<div data-role="page" class="type-interior" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
+			<span class="ui-app-title">my Windows Phone App</span>
+			<h1>Example</h1>
+		</div><!-- /header -->
+	<div data-role="content" data-theme="a">
+		<div class="content-primary">
+
+		<form action="#" method="get">
+			<div data-role="fieldcontain">
+	         <label for="name">Username:</label>
+	         <input type="text" name="name" id="name" value="" />
+			</div>
+			<div data-role="fieldcontain">
+			<label for="textarea">Password:</label>
+			<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+			</div>
+			<div data-role="fieldcontain">
+				<a href="#" data-role="button" data-inline="true">submit</a>
+			</div>
+	</form>
+	</div><!--/content-primary -->		
+</div><!-- /content -->
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-iconpos="top">
+		<ul>
+			<li><a href="#" data-icon="plus">Add</a></li>
+			<li><a href="#" data-icon="minus">Remove</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
